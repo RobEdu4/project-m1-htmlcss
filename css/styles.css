@@ -1,3 +1,563 @@
 @import 'css-reset.css';
 
-/* CSS here :) */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.logoThumbImg{
+    background:  url("/imgs/logo.svg") no-repeat;
+    background-color: #3a3633;
+    background-size: contain;
+    text-indent: 9999px;
+    overflow: hidden;
+    height: 2rem;
+}
+
+#navBar{
+    background-color: #3a3633;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerMenu{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+a{
+    color: #eaeaee;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 12px 38px;
+}
+
+.headerMenu a:hover{
+    text-decoration: underline;
+}
+
+.mobileNavButton{
+    background-color: #3a3633; 
+    border: none;
+    display: none;
+}
+
+@media screen and (max-width:600px){  
+    .headerMenu{
+        display: none;
+    }
+
+    .mobileNavButton{
+        display: inline-block;
+        margin-right: 14px;
+    }
+
+
+    .logoThumbImg{
+        margin-left: 14px;
+        height: 40px;
+    }
+
+    .logoThumbImg:hover{
+
+    }
+}
+
+/*
+
+split 
+
+*/
+
+
+#firstSection{
+    height: 20rem;
+    background: url("/imgs/bg.jpg");
+    background-size: 100% 100%;
+    padding: 8rem 15rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+
+}
+
+.firstSectionBoxing{
+    display: flex;
+    width: 60rem;
+    border: 5px solid white;
+}
+
+.introducingHook{
+    background-color: darkgray;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 50px 20px 50px 20px;
+    
+}
+
+.introducingMain{
+    font-size: 4rem;
+    margin: 10px 10px;
+    opacity: 2;
+    padding: 50px 10px 70px 10px;
+    line-height: 1.5em;
+}
+
+
+.introducingDreams{
+    font-size: 2.5rem;
+    border-bottom:  dotted 2px white;
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+.introP{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px; 
+    line-height: 2em;
+    
+}
+
+@media screen and (max-width:600px){
+    #firstSection{
+        padding: 0;
+        height: 450px;
+        margin: 0;
+        align-items: stretch;
+        padding: 30px 0 0 0;
+        
+    }
+
+    .firstSectionBoxing{
+        display: block;
+        max-width: 100%;
+        border: none;
+    }
+
+    .introducingMain{
+        display: block;
+        font-size: 24px;
+        padding: 32px 8px;
+        font-weight: bold;
+    }
+   
+    .introducingHook{
+        padding: 20px 20px;
+    }
+
+    .introducingDreams{
+        border: none;
+        flex-direction: column;
+        font-size: 24px;
+        margin-bottom: 0px;
+        line-height: 0px;
+        font-weight: bold;
+        
+    }
+
+    .introP{
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .introPara1{
+        text-indent: -9999px;
+        line-height: 0;
+    }
+
+    .introPara1:after{
+        content: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Nobis sint nesciunt dignissimos nihil commodi ab eaque quam quo illo, vero quis, illum incidunt hic, corporis optio accusantium ipsam ipsa velit!";
+        display: block;
+        line-height: initial;
+        text-indent: 0;
+    }
+
+    .introPara2{
+        text-indent: -9999px;
+        line-height: 0;
+    }
+
+    .introPara2:after{
+        content: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Nobis sint nesciunt dignissimos nihil commodi ab eaque quam quo illo, vero quis, illum incidunt hic, corporis optio accusantium ipsam ipsa velit!";
+        display: block;
+        line-height: initial;
+        text-indent: 0;
+    }
+}
+
+
+/*
+
+split
+
+*/
+
+
+#featureSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
+
+.featureWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.featureLi{
+    border: solid 1px lightgray;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 50px 20px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.featureText1{
+    text-align: center;
+}
+
+.featureTitle{
+    font-size: 16px;
+}
+
+.featureText{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+.featureIt{
+    color: white;
+    background-color: #3a3633;
+    border: 0.5px solid lightgray;
+    height: 36px;
+    width: 280px;
+    font-size: 12px;
+}
+
+.featureIt:hover{
+    border: 1px solid gold;
+}
+
+.featureImg1{
+    height: 40px;
+    width: 40px;
+    background: url("/imgs/icon_check.svg") no-repeat;
+    background-size: 40px 40px;
+    text-indent: 9999px;
+}
+
+.featureImg2{
+    height: 40px;
+    width: 40px;
+    background: url("/imgs/icon_reload.svg") no-repeat;
+    background-size: 40px 40px;
+    text-indent: 9999px;
+}
+
+.featureImg3{
+    height: 40px;
+    width: 40px;
+    background: url("/imgs/icon_fingerprint.svg") no-repeat;
+    background-size: 40px 40px;
+    text-indent: 9999px;
+}
+
+@media screen and (max-width:600px){
+    .featureText{
+        font-size: 16px;
+    }
+}
+/*
+
+split
+
+*/
+
+.coolSection{
+    color:white;
+    background-color: #3a3633;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.coolTitle{
+    margin: 0 0 60px 0;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.coolText{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 0 0 150px 0;
+}
+
+
+
+.slickSection{
+    background-image: linear-gradient(90deg, white , dodgerblue );
+    color: white;
+    padding: 100px 30px;
+    text-align: right;
+}
+
+.slickTitle{
+    margin: 0 0 60px 0;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.slickText{
+    font-size: 20px;
+    margin: 0 0 150px 0;
+}
+
+
+.coolCenter{
+    position: absolute;
+    border: 8px solid white;
+    background-color: #3a3633;
+    left: 36px;
+    height: 120px;
+    width: 240px;
+    margin-top: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 72px;
+}
+
+.coolCenter h2{
+    color: red;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.coolCenter p{
+    color: white;
+    line-height: 1.5rem;
+}
+
+.coolCenter:hover{
+    animation: Pop 2s ease-in-out;
+}
+  
+  
+@keyframes Pop{
+    from {transform: scale(1)}
+    80% {transform: scale(1.25)}
+    90% {transform: scale(0.9)} 
+    to {transform: scale(1)}  
+}
+
+
+@media screen and (max-width: 600px){
+    .coolCenter{
+        margin-left: 32px;
+        max-width: 80%;
+    }
+}
+/*
+
+split - pictures
+
+*/
+
+
+#fourthSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.picDiv{   
+    height: 280px;
+    min-width: 320px;
+    width:100%;
+    width: calc(100% / 3);
+    transition: 1s;
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.picItem{
+    height:auto;
+    width: 100%;
+    transition: ease-in-out .5s;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+
+.picItem:hover{
+    transform: scale(1.15);
+}
+
+.picDiv p{
+    color:white;
+    position: absolute;
+    margin: 0 0 200px 100px;
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    #fourthSection{
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 auto;
+        line-height: 0;
+    }
+
+    .picDiv{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+        line-height: 0;
+    }
+    .picItem{
+        height: 100% auto;    
+        min-width: 550px;
+        margin: 0 auto;
+        padding: 0 auto;
+        line-height: 0;
+    }
+}
+
+
+/*
+
+split
+
+*/
+
+#registerSection{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.registrationForm input{
+    border: 2px solid gray;
+    border-radius: 4px;
+    color: gray;
+    height: 20px;
+    margin: 8px 0 0 0;
+}
+
+.registrationForm label{
+    font-size: 12px;
+    margin: 8px 0 0 5px;
+}
+
+.registrationForm button{
+    background: url("/imgs/icon_send.svg") no-repeat center center;
+    background-color: #3a3633;
+    height: 26px;
+    width: 32px;
+    margin-left: -10px;
+    text-indent: -10000px;
+}
+
+
+.registrationForm label:first-child{
+    margin: 0 0 0 -1px;
+}
+
+.catCheck{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    color:black;
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+
+
+
+/*
+
+split
+
+*/
+
+
+#pageFooter{
+    border-top: 1.5px solid #eaeaee;
+}
+
+.footerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 26px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .footerDiv{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .link{
+        font-size: 16px;
+    }
+}
+

@@ -2,14 +2,203 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <link href="css/css-reset.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- write some HTML! -->
+    <header>
+    <div id="navBar">
+
+        <a class="logoThumbImg">thumbnail</a>
+
+      <ul class="headerMenu">
+          <li class="headerMenuItem"></li><a href="#">Features</a></li>
+          <li class="headerMenuItem"></li><a href="#">Advantages</a></li>
+          <li class="headerMenuItem"></li><a href="#">Gallery</a></li>
+          <li class="headerMenuItem"></li><a href="#">Products</a></li>
+        </ul>
+
+      <button class="mobileNavButton" aria-label="Show menu">
+        <img src="/imgs/menu.svg" />
+      </button>
+      </div>
+    </header>
+
+    <div id="firstSection">
+      <div class="firstSectionBoxing">
+          <h1 class="introducingMain">Introducing Falcon 9</h1>
+          <div class="introducingHook">
+            <h2 class="introducingDreams">We make dreams come true</h2>
+            <div class="introP">
+              <p class="introPara1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.</p>
+              <p class="introPara2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+
+
+          </div>
+      </div>
+
+    </div>
+
+    <section id="featureSection">
+
+      <ul class="featureWrap">
+
+        <li class="featureLi">
+          <a class="featureImg1">check</a>
+          <h2 class="featureTitle">Amazing feature 1</h2>
+          <p class="featureText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          Lorem ipsum dolor sit amet.</p>
+          <button class="featureIt">Get it</button>
+        </li>
+        
+        <li class="featureLi">
+          <a class="featureImg2">reset</a>
+          <h2 class="featureTitle">Amazing feature 2</h2>
+          <p class="featureText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <button class="featureIt">Sell it</button>
+        </li>
+
+        <li class="featureLi">
+          <a class="featureImg3">print</a>
+          <h2 class="featureTitle">Amazing feature 3</h2>
+          <p class="featureText">Excepteur sint accaecat cupidatat nan proident, sunt in culpa qui officia deserunt mallit anim id est laborum.</p>
+          <button class="featureIt">Do it</button>
+        </li>
+
+      </ul>
+
+
+    </section>
+
+
+    <section id="thirdSection">
+
+
+      <div class="coolCenter">
+        <h2 class="coolH">This looks cool</h2>
+        <p class="coolP">Hover me if you like random animations</p>
+      </div>
+
+
+      <div class="coolSection">
+        <h1 class="coolTitle">Some cool text</h1>
+        <p class="coolText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      
+
+
+      <div class="slickSection">
+        <h1 class="slickTitle">Slick gradient</h1>
+        <p class="slickText">Lorem ipsum?</p>
+      </div>
+
+    </section>
+
+    <section id="fourthSection">
+
+
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/tesla.jpg" alt="tesla" />
+          <p>Our flagship car: The Model S</p> 
+        </div>
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/procat.jpg" alt="Smirky Kitty" />
+          <p>Cool cat</p>
+        </div>
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/hyperloop.jpg" alt="hyperloop" />
+          <p>Introducing the Hyperloop</p>
+        </div>
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/sneakycat.jpg" alt="Ninja Kitty" />
+          <p>So sneaky</p>
+        </div>
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/falconrocket.jpeg" alt="Falcon Rocket" />
+          <p>BFR: Big Falcon Rocket</p>
+        </div>
+
+        <div class="picDiv">
+          <img class="picItem" src="imgs/funnycat.jpg" alt="Wo Kitty" />
+          <p>So much fun</p>
+        </div>
+
+
+
+
+
+    </section>
+
+    <div id="registerSection">
+      <form class="registrationForm">
+
+      <label>Register to our mailing list: </label>
+        <div>
+          <input type="email" required class="text-fiend" />
+          <button type="submit">send</button>
+        </div>
+        <div class="catCheck">
+      <input type="checkbox" class="emailSub" name="emailSub" value="emailSub" />
+      <label for ="emaiSub">Send me daily cat images</label>
+    </div>
+
+
+      </form>
+    </div>
+
+    <div id="pageFooter">
+
+      <div class="footerDiv">
+
+        <ul class=footerLinks1>
+          <li><a class="link" href="#">About us</a></li>
+          <li><a class="link" href="#">Privacy Policy</a></li>
+          <li><a class="link" href="#">Legal notes</a></li>
+          <li><a class="link" href="#">Copyright</a></li>
+        </ul>
+
+        <ul class=footerLinks2>
+          <li><a class="link" href="#">About us</a></li>
+          <li><a class="link" href="#">Privacy Policy</a></li>
+          <li><a class="link" href="#">Legal notes</a></li>
+          <li><a class="link" href="#">Copyright</a></li>
+        </ul>
+
+        <ul class=footerLinks3>
+          <li><a class="link" href="#">About us</a></li>
+          <li><a class="link" href="#">Privacy Policy</a></li>
+          <li><a class="link" href="#">Legal notes</a></li>
+          <li><a class="link" href="#">Copyright</a></li>
+        </ul>
+
+        <ul class=footerLinks4>
+          <li><a class="link" href="#">About us</a></li>
+          <li><a class="link" href="#">Privacy Policy</a></li>
+          <li><a class="link" href="#">Legal notes</a></li>
+          <li><a class="link" href="#">Copyright</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  
+
   </body>
 </html>
